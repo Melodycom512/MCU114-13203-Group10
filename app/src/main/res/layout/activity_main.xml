@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderApp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="目前訂單"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnMainMeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選主餐" />
+
+        <Button
+            android:id="@+id/btnSideDish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選副餐" />
+
+        <Button
+            android:id="@+id/btnDrink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="選飲料" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="確認" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="清除訂單" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
