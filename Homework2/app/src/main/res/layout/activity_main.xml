@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="電話號碼："
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <!-- 這裡照PDF的排版放數字按鈕 -->
+    <!-- 第一排 1 2 3 -->
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="1"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="2"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@id/btnOne"
+        app:layout_constraintTop_toTopOf="@id/btnOne" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="3"
+        android:textSize="28sp"
+        app:layout_constraintStart_toEndOf="@id/btnTwo"
+        app:layout_constraintTop_toTopOf="@id/btnTwo" />
+
+    <!-- 第二排 4 5 6 -->
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="4"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnOne"
+        app:layout_constraintStart_toStartOf="@id/btnOne" />
+
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="5"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnTwo"
+        app:layout_constraintStart_toStartOf="@id/btnTwo" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="6"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnThree"
+        app:layout_constraintStart_toStartOf="@id/btnThree" />
+
+    <!-- 第三排 7 8 9 -->
+    <Button
+        android:id="@+id/btnSeven"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="7"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnFour"
+        app:layout_constraintStart_toStartOf="@id/btnFour" />
+
+    <Button
+        android:id="@+id/btnEight"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="8"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnFive"
+        app:layout_constraintStart_toStartOf="@id/btnFive" />
+
+    <Button
+        android:id="@+id/btnNine"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="9"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnSix"
+        app:layout_constraintStart_toStartOf="@id/btnSix" />
+
+    <!-- 第四排 * 0 清除 -->
+    <Button
+        android:id="@+id/btnStar"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="*"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnSeven"
+        app:layout_constraintStart_toStartOf="@id/btnSeven" />
+
+    <Button
+        android:id="@+id/btnZero"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="0"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnEight"
+        app:layout_constraintStart_toStartOf="@id/btnEight" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:text="清除"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/btnNine"
+        app:layout_constraintStart_toStartOf="@id/btnNine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
