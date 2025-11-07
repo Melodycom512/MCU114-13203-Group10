@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</LinearLayout>xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:padding="16dp"
+android:gravity="center"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<Button
+    android:id="@+id/btnMainMeal"
+    android:text="選主餐"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btnSideDish"
+    android:text="選副餐"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btnDrink"
+    android:text="選飲料"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:id="@+id/btnConfirm"
+    android:text="確認訂單"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+</>
